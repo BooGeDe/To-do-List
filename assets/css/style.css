@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.done
+{
+	text-decoration: line-through;
+	color: gray;
+}
+
+body
+{
+  background: #00c9ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00c9ff, #92fe9d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2BC0E4, #EAECC6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#container
+{
+	background: white;
+	margin: 100px auto;
+	width: 500px;
+	overflow: hidden;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+	border-radius: 5px 5px 0 0;
+}
+
+#header
+{
+	background-color: #2980b9;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	padding:10px;
+}
+
+#header h1
+{
+	padding-left: 5px;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#header #add
+{
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: text-shadow 0.5s ease;
+}
+#header #add:hover
+{
+	text-shadow: 0px 0px 2px #fff;
+
+}
+
+#newTask
+{
+	background-color: #f7f7f7;
+}
+
+#newTask input
+{
+	background: transparent;
+	border:none;
+	width: 99%;
+	padding:10px;
+	outline: none;
+	margin: 5px 3px;
+	font-size: 18px;
+	padding-left: 20px;
+color: #2980b9;
+}
+
+#body ul li 
+{
+	line-height: 40px;
+	color: #666;
+}
+
+#body ul li:nth-of-type(even)
+{
+	background: #f7f7f7;
+}
+
+#body ul li span
+{
+
+	display: inline-block;
+	background: red;
+	color: white;
+	height: 40px;
+	width: 0px;
+	margin-right: 20px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
+#body ul li:hover span
+{
+	opacity: 100;
+	width: 40px;
+}
